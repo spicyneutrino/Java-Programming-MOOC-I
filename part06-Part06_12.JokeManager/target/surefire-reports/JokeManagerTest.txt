@@ -1,0 +1,79 @@
+-------------------------------------------------------------------------------
+Test set: JokeManagerTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec <<< FAILURE!
+testAddingAndStopping(JokeManagerTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: NullPointerException, in call start(). An error occurred when starting the user interface. Test the code:
+JokeManager manager = new JokeManager();
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+1
+Teacher, I came up with a new word! .. Do tell, what is it ?.. Plagiarism!
+X
+
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.Reader.read(Reader.java:189)
+	at java.base/java.util.Scanner.readInput(Scanner.java:882)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1796)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1649)
+	at UserInterface.start(UserInterface.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.invokeMethod(ReflectionUtils.java:508)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeMethodOn(Reflex.java:603)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeOnImpl(Reflex.java:573)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef0.invokeOn(Reflex.java:736)
+	at JokeManagerTest.testAddingAndStopping(JokeManagerTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+testDrawing(JokeManagerTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: When the user interface is instructed to draw a joke, the program should print exactly one joke. Test the code:
+JokeManager manager = new JokeManager();
+manager.addJoke("Just joking 1");
+manager.addJoke("Just joking 2");
+manager.addJoke("Just joking 3");
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+2
+X
+ expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at JokeManagerTest.testDrawing(JokeManagerTest.java:226)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+

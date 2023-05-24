@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="16" failures="2" name="JokeManagerTest" time="0.099" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.17+8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\mooc-java-programming-i\part06-Part06_12.JokeManager"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\mooc-java-programming-i\part06-Part06_12.JokeManager"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.17+8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\TMCBeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Python310;C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\mingw64\bin;C:\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-19\bin;C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11;C:\Users\User\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python311\;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;;."/>
+    <property name="maven.conf" value="C:\Program Files\TMCBeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.timezone" value="Asia/Katmandu"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="User"/>
+    <property name="java.class.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dfile.encoding=UTF-8 -T=1 -q test"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.17"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Program Files\TMCBeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-11.0.17+8"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="JokeManagerTest" name="oneJokeAndDraw" time="0.046"/>
+  <testcase classname="JokeManagerTest" name="testStopping" time="0.009"/>
+  <testcase classname="JokeManagerTest" name="testAddingAndStopping" time="0.009">
+    <failure message="NullPointerException, in call start(). An error occurred when starting the user interface. Test the code:
+JokeManager manager = new JokeManager();
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+1
+Teacher, I came up with a new word! .. Do tell, what is it ?.. Plagiarism!
+X
+" type="java.lang.AssertionError">java.lang.AssertionError: NullPointerException, in call start(). An error occurred when starting the user interface. Test the code:
+JokeManager manager = new JokeManager();
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+1
+Teacher, I came up with a new word! .. Do tell, what is it ?.. Plagiarism!
+X
+
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.Reader.read(Reader.java:189)
+	at java.base/java.util.Scanner.readInput(Scanner.java:882)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1796)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1649)
+	at UserInterface.start(UserInterface.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at fi.helsinki.cs.tmc.edutestutils.ReflectionUtils.invokeMethod(ReflectionUtils.java:508)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeMethodOn(Reflex.java:603)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef.invokeOnImpl(Reflex.java:573)
+	at fi.helsinki.cs.tmc.edutestutils.Reflex$MethodRef0.invokeOn(Reflex.java:736)
+	at JokeManagerTest.testAddingAndStopping(JokeManagerTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classJokeManagerHasCorrectMethods" time="0"/>
+  <testcase classname="JokeManagerTest" name="testPrinting" time="0.001"/>
+  <testcase classname="JokeManagerTest" name="printingJokes" time="0.004"/>
+  <testcase classname="JokeManagerTest" name="manyJokesAndDraw" time="0.008"/>
+  <testcase classname="JokeManagerTest" name="classJokeManagerHasParameterlessConstructor" time="0.001"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasTwoObjectVariables" time="0.001"/>
+  <testcase classname="JokeManagerTest" name="noJokesAddedAndDraw" time="0.002"/>
+  <testcase classname="JokeManagerTest" name="testDrawing" time="0.002">
+    <failure message="When the user interface is instructed to draw a joke, the program should print exactly one joke. Test the code:
+JokeManager manager = new JokeManager();
+manager.addJoke(&quot;Just joking 1&quot;);
+manager.addJoke(&quot;Just joking 2&quot;);
+manager.addJoke(&quot;Just joking 3&quot;);
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+2
+X
+ expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: When the user interface is instructed to draw a joke, the program should print exactly one joke. Test the code:
+JokeManager manager = new JokeManager();
+manager.addJoke(&quot;Just joking 1&quot;);
+manager.addJoke(&quot;Just joking 2&quot;);
+manager.addJoke(&quot;Just joking 3&quot;);
+Scanner scanner = new Scanner(System.in);
+
+UserInterface ui = new UserInterface(manager, scanner);
+ui.start();
+With the input:
+2
+X
+ expected:&lt;1&gt; but was:&lt;0&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at JokeManagerTest.testDrawing(JokeManagerTest.java:226)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceExists" time="0.002"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasMethodStart" time="0.002"/>
+  <testcase classname="JokeManagerTest" name="classJokeManagerExists" time="0.001"/>
+  <testcase classname="JokeManagerTest" name="classUserInterfaceHasConstructorWithTwoParameters" time="0.01"/>
+  <testcase classname="JokeManagerTest" name="classJokeManagerOnlyHasOneObjectVariable" time="0.001"/>
+</testsuite>
